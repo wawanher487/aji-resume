@@ -3,9 +3,7 @@ import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
-  FaGlobe,
   FaLinkedin,
-  FaGithub,
 } from 'react-icons/fa';
 
 interface ResumeProps {
@@ -32,16 +30,8 @@ export default function Resume({ data }: ResumeProps) {
             {data.location}
           </div>
           <div className="flex items-center">
-            <FaGlobe className="mr-2" />
-            {data.website}
-          </div>
-          <div className="flex items-center">
             <FaLinkedin className="mr-2" />
             {data.linkedin}
-          </div>
-          <div className="flex items-center">
-            <FaGithub className="mr-2" />
-            {data.github}
           </div>
         </div>
       </header>
@@ -106,7 +96,7 @@ export default function Resume({ data }: ResumeProps) {
         ))}
       </section>
 
-      <section className="mb-8">
+      {/* <section className="mb-8">
         <h2 className="pb-1 mb-3 text-2xl font-semibold text-gray-800 border-b-2 border-blue-500">
           Certifications
         </h2>
@@ -120,7 +110,7 @@ export default function Resume({ data }: ResumeProps) {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section>
         <h2 className="pb-1 mb-3 text-2xl font-semibold text-gray-800 border-b-2 border-blue-500">
